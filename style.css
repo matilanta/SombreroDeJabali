@@ -49,10 +49,12 @@ h1, h2, h3{
 .logos{
     height: 35px;
     width: 40px;
+    /*transition: all 1s;*/
     transition: all 1s;
 }
 
 .logos:hover{
+    /*transform: scale(1.3);*/
     transform: scale(1.3);
 }
 
@@ -77,6 +79,7 @@ h1, h2, h3{
 }
 
 .html:hover{
+    /*transform: scale(1.3);*/
     transform: scale(1.3);
 }
 
@@ -149,10 +152,14 @@ h1, h2, h3{
     border-radius: 6px;
     display: flex;
     justify-content: center;
+    /*transition: all 1s;*/
     transition: all 1s;
 }
 
 .contact:hover{
+    /*transform: scale(1.3);
+    background-color: transparent;
+    color: black;*/
     transform: scale(1.3);
     background-color: transparent;
     color: black;
@@ -263,6 +270,7 @@ h1, h2, h3{
     width: 470.5px;
     margin-right: 2px;
     margin-left: 2px;
+    /*transition: all 1s;*/
     transition: all 1s;
 }
 
@@ -283,12 +291,14 @@ h1, h2, h3{
 }
 
 .conectores:hover{
+    /*transform: scale(1.5);*/
     transform: scale(1.5);
 }
 
 .conectores{
     height: 80px;
     width: 80px;
+    /*transition: all 1s;*/
     transition: all 1s;
 }
 
@@ -394,6 +404,7 @@ h1, h2, h3{
     border-radius: 6px;
     display: flex;
     justify-content: center;
+    /*transition: all 1s;*/
     transition: all 1s;
     top: 580px;
     left: 800px;
@@ -401,6 +412,9 @@ h1, h2, h3{
 }
 
 .enviar:hover{
+    /*transform: scale(1.3);
+    background-color: transparent;
+    color: black;*/
     transform: scale(1.3);
     background-color: transparent;
     color: black;
