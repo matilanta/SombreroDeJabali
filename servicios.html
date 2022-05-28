@@ -1,53 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Servicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="style.css">
-    <title>Servicio</title>
-</head>
-<body class="bodfond">
-    
+  </head>
+  <body class="services">
+  
     <header>
-        <section class="sectionheader">
-            <nav>
-                <ul class="links">
-                    <li class="html"><a class="html" href="index.html">Home</a></li>
-                    <li class="html"><a class="html" href="servicios.html">Servicios</a></li>
-                    <li class="html"><a class="html" href="galeria.html">Galeria</a></li>
-                    <li class="html"><a class="html" href="nosotros.html">Nosotros</a></li>
-                    <li class="html"><a class="html" href="contacto.html">Contacto</a></li>
+
+        <nav class="navbar navbar-expand-lg navbar-light headcol">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="multimedia/logo/logo.png" height="40px" class="d-inline-block align-top" alt="logo">
+                <img src="multimedia/logo/nombremarca.png" height="40px" class="d-inline-block align-top" alt="logo titulo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-        </section>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <img class="logo" src="multimedia/logo/logo.png" alt="logo del sombrero de jabali">
-    </main>
-    
-    <main class="nombretab">
-        <a href="index.html"><h2>SOMBRERO</h2></a>
-        <a href="index.html"><H3>de</H3></a>
-    </main>
-    
-    <main class="jaba">
-        <a href="index.html"><h1>JABALI</h1></a>
-    </main>
-    
-    <section> 
-        <h1 class="service">SERVICIOS</h1>
-    </section>
+    <div class="servicios-frame d-flex align-items-center descservice">
+        <section class="about container-fluid">
+            <div class="row h-100 my-0" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" data-aos-easing="ease">
+                <div class="about_text-container px-5 col-md-6">
+                    <h2 class="mb-md-5 display-3 text-center text-md-left service">SERVICIOS</h2>
+                    <p class="lead">Almuerzos o cenas que se entregan a diario, llegan frescas, refrigeradas y simplemente deben calentarse en el microondas o de preferir en hornos eléctricos a la hora de comer. Los pedidos se realizan a través de nuestra APP y las mismas llegan en bandeja de plástico envasadas en Flow Pack con su descripción, nombre de usuario y vencimiento. Chef Gourmet ofrece una variedad de menús con opciones diferentes todos los días según las preferencias de cada cliente.</p>
+                    <p class="lead">Todos nuestros postres, desayunos o meriendas se adaptan al pedido del cliente, somos especialistas en pasteleria</p>
+                </div>
+                <div class="about_img-container col-md-6 d-none d-md-block d-lg-block">
+                    <div class="row mx-5 h-100">
+                        <video autoplay poster="img/fiesta7.jpg" loop muted>
+                            <source src="multimedia/videos/serviciocatering.mp4">
+                        </video>
+                    </div>
+                </div>
 
-    <section class="desc">
-        <p>Almuerzos o cenas que se entregan a diario, llegan frescas, refrigeradas y simplemente deben calentarse en el microondas o de preferir en hornos eléctricos a la hora de comer. Los pedidos se realizan a través de nuestra APP y las mismas llegan en bandeja de plástico envasadas en Flow Pack con su descripción, nombre de usuario y vencimiento. Chef Gourmet ofrece una variedad de menús con opciones diferentes todos los días según las preferencias de cada cliente.
-        </p>
-    </section>
+            </div>
 
-    <section>
-        <video autoplay class="videoservi" src="multimedia/videos/serviciocatering.mp4" controls></video>
-    </section>
+        </section>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>

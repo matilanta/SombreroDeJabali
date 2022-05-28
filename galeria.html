@@ -1,79 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Galeria</title>
-</head>
-<body class="bodygal">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="services">
+  
     <header>
-        <section class="sectionheader">
-            <nav>
-                <ul class="links">
-                    <li class="html"><a class="html" href="index.html">Home</a></li>
-                    <li class="html"><a class="html" href="servicios.html">Servicios</a></li>
-                    <li class="html"><a class="html" href="galeria.html">Galeria</a></li>
-                    <li class="html"><a class="html" href="nosotros.html">Nosotros</a></li>
-                    <li class="html"><a class="html" href="contacto.html">Contacto</a></li>
+
+        <nav class="navbar navbar-expand-lg navbar-light headcol">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="multimedia/logo/logo.png" height="40px" class="d-inline-block align-top" alt="logo">
+                <img src="multimedia/logo/nombremarca.png" height="40px" class="d-inline-block align-top" alt="logo titulo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-        </section>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <img class="logo" src="multimedia/logo/logo.png" alt="logo del sombrero de jabali">
-    </main>
-    
-    <main class="nombretab">
-        <a href="index.html"><h2>SOMBRERO</h2></a>
-        <a href="index.html"><H3>de</H3></a>
-    </main>
-    
-    <main class="jaba">
-        <a href="index.html"><h1>JABALI</h1></a>
-    </main>
-
-    <section class="maingale">
-        <div class="parent">
-            <div class="div1"><img class="imggal" src="multimedia/imagenes/foto1.jpg" alt=""></div>
-            <div class="div2"><img class="imggal" src="multimedia/imagenes/foto2.jpeg" alt=""></div>
-            <div class="div3"><img class="imggal" src="multimedia/imagenes/foto2.webp" alt=""></div>
-            <div class="div4"><img class="imggal" src="multimedia/imagenes/foto4.png" alt=""></div>
-            <div class="div5"><img class="imggal" src="multimedia/imagenes/foto5.jpg" alt=""></div>
-            <div class="div6"><img class="imggal" src="multimedia/imagenes/foto6.jpg" alt=""></div>
-            <div class="div7"><img class="imggal" src="multimedia/imagenes/foto7.jpeg" alt=""></div>
-            <div class="div8"><img class="imggal" src="multimedia/imagenes/foto8.webp" alt=""></div>
-            <div class="div9"><img class="imggal" src="multimedia/imagenes/foto9.jpg" alt=""></div>
-            <div class="div10"><img class="imggal" src="multimedia/imagenes/foto10.jpg" alt=""></div>
-            <div class="div11"><img class="imggal" src="multimedia/imagenes/foto11.jpeg" alt=""></div>
-            <div class="div12"><img class="imggal" src="multimedia/imagenes/foto12.jpg" alt=""></div>
+    <div class="row row align-items-start">
+        <div class="col-sm-6    col-md-4    col-lg-4    col-xl-3    col-xxl-3">
+          <img class="imggal" src="multimedia/imagenes/foto1.png" alt="">
         </div>
-    </section>
+        <div class="col-sm-6    col-md-4    col-lg-4    col-xl-3    col-xxl-3">
+          <img class="imggal" src="multimedia/imagenes/foto2.jpeg" alt="">
+        </div>
+        <div class="col-sm-6    col-md-4    col-lg-4    col-xl-3    col-xxl-3">
+          <img class="imggal" src="multimedia/imagenes/foto2.webp" alt="">
+        </div>
+        <div class="col-sm-6    col-md-12   col-lg-12   col-xl-3    col-xxl-3">
+          <img class="imggal" src="multimedia/imagenes/foto4.png" alt="">
+        </div>
+      </div>
 
-    <section class="logogale">
-        <img src="multimedia/logo/logo.png" alt="logo de la empresa">
-    </section>
+      <div class="row">
+          <div class="col-sm-6  col-md-4    col-lg-4    col-xl-3    col-xxl-3">
+            <img class="imggal" src="multimedia/imagenes/foto5.jpg" alt="">
+          </div>
+          <div class="col-sm-6  col-md-4    col-lg-4    col-xl-3    col-xxl-3">
+            <img class="imggal" src="multimedia/imagenes/foto6.jpg" alt="">
+          </div>
+          <div class="col-sm-6  col-md-4    col-lg-4    col-xl-3    col-xxl-3">
+            <img class="imggal" src="multimedia/imagenes/foto7.jpeg" alt="">
+          </div>
+          <div class="col-sm-6  col-md-12   col-lg-12   col-xl-3    col-xxl-3">
+            <img class="imggal" src="multimedia/imagenes/foto8.webp" alt="">
+          </div>
+        </div>
 
-    <section class="descplay">
-        <p>Conoce la playlist con la que el sombrero de jabali se inspira para realizar sus platos gourmet</p>
-    </section>
-
-    <section class="playlist">
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4V4A3jr6LJFYEo1n0kVOkW?utm_source=generator" width="300" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    </section>
-
-    <section class="auris">
-        <img class="conectores" src="multimedia/logo/auris2.png" alt="imagen auriculares">
-    </section>
-
-    <section class="cubiertos">
-        <img class="conectores" src="multimedia/logo/cubiertos2.png" alt="imagen cubiertos">
-    </section>
-
+        <div class="row">
+          <div class="col-sm-6  col-md-4    col-lg-4    col-xl-3    col-xxl-3">
+            <img class="imggal" src="multimedia/imagenes/foto9.jpg" alt="">
+          </div>
+          <div class="col-sm-6  col-md-4    col-lg-4    col-xl-3    col-xxl-3">
+            <img class="imggal" src="multimedia/imagenes/foto10.jpg" alt="">
+          </div>
+          <div class="col-sm-6  col-md-4    col-lg-4    col-xl-3    col-xxl-3">
+            <img class="imggal" src="multimedia/imagenes/foto11.jpeg" alt="">
+          </div>
+          <div class="col-sm-6  col-md-12   col-lg-12   col-xl-3    col-xxl-3">
+            <img class="imggal" src="multimedia/imagenes/foto12.jpg" alt="">
+          </div>
+        </div>
 
 
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>

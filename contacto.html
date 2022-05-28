@@ -1,70 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contacto</title>
-</head>
-<body class="bodyconta">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="index">
+  
     <header>
-        <section class="sectionheader">
-            <nav>
-                <ul class="links">
-                    <li class="html"><a class="html" href="index.html">Home</a></li>
-                    <li class="html"><a class="html" href="servicios.html">Servicios</a></li>
-                    <li class="html"><a class="html" href="galeria.html">Galeria</a></li>
-                    <li class="html"><a class="html" href="nosotros.html">Nosotros</a></li>
-                    <li class="html"><a class="html" href="contacto.html">Contacto</a></li>
+
+        <nav class="navbar navbar-expand-lg navbar-light headcol">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="multimedia/logo/logo.png" height="40px" class="d-inline-block align-top" alt="logo">
+                <img src="multimedia/logo/nombremarca.png" height="40px" class="d-inline-block align-top" alt="logo titulo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-        </section>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <img class="logo" src="multimedia/logo/logo.png" alt="logo del sombrero de jabali">
-    </main>
+    <div class="container-fluid px-0 servicios-frame">
+        <section class="contact container-fluid h-100">
+
+            <div class="row h-100 justify-content-md-center d-flex align-items-center" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" data-aos-easing="ease">
+
+                <div class="col-md-5">
+
+                    <div class="jumbotron py-3">
+                        <h2 class="display-4">CONTACTO</h2>
+
+                        <hr class="my-4">
+
+                        <form>
+
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="col">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+
+                            <div class="form-group my-3">
+                                <textarea name="" id="" cols="20" rows="6" class="form-control" placeholder="Consulta"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-secondary btn-lg border-0">Enviar</button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        
+    </div>
+
+    <main class="container-fluid h-100 px-0 servicios-frame">
+        <section class="landing h-100 d-flex align-items-center col-md-12 text-center">
+            <div  class="container-fluid" data-aos="fade-up" data-aos-delay="200" data-aos-once="true" data-aos-easing="ease">
+                <div>
+            <div class="row">
+            <div class="iniciodesc">
+                <a class="iniciodesc" href="https://www.instagram.com/lantanomatias/" target="_blank"><img class="logos" src="multimedia/logo/loginsta2.png" alt="instagram del chef"></a>
+                <a class="iniciodesc" href="https://www.facebook.com/mati.lantano.3" target="_blank"><img  class="logos" src="multimedia/logo/logfb2.png" alt="facebook del chef"></a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        </section>
+        </main>
     
-    <main class="nombretab">
-        <a href="index.html"><h2>SOMBRERO</h2></a>
-        <a href="index.html"><H3>de</H3></a>
-    </main>
-    
-    <main class="jaba">
-        <a href="index.html"><h1>JABALI</h1></a>
-    </main>
-
-    
-    <main class="detrascontac">
-        <div></div>
-    </main>
-
-    <section>
-        <H1 class="contacto">CONTACTO</H1>
-    </section>
-
-    <section class="inputs">
-        <input type="Nombre" style="width:220px; height:40px">
-        <input type="Email" style="width:220px; height:40px">
-    </section>
-
-    <section class="textarea">
-        <textarea name="Consulta" id="" cols="30" rows="10" style="width:480px; height:200px"></textarea>
-    </section>
-
-    <section>
-        <a class="enviar" href="contacto.html">ENVIAR</a>
-    </section>
-
-    <footer class="redessocialescontact">
-        <a href="https://www.instagram.com/lantanomatias/" target="_blank"><img class="logos" src="multimedia/logo/loginsta2.png" alt="instagram del chef"></a>
-        <a href="https://www.facebook.com/mati.lantano.3" target="_blank"><img  class="logos" src="multimedia/logo/logfb2.png" alt="facebook del chef"></a>
-    </footer>
-
-
     
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>
