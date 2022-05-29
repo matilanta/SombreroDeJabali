@@ -48,6 +48,7 @@ body{
 }
 
 .contacto{
+    text-decoration: none;
     list-style: none;
     color: #efe7e2;
     background-color: #af795D;
