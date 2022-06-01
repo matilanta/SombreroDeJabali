@@ -1,9 +1,14 @@
 *{text-decoration: none;
     list-style: none;
 margin: 0;
-padding: 0;}
+padding: 0;
+}
 
 /*index*/
+
+h1{
+    font-size: 3rem;
+}
 
 body{
     flex-wrap: wrap;
@@ -23,7 +28,7 @@ body{
 }
 
 .seccionservicios{
-    margin-top: 100px;
+    margin-top: 2%;
 }
 
 .index{
@@ -38,34 +43,33 @@ body{
     margin: 0px;
 }
 
+.contacinic{
+    font-size: 30px;
+    background-color: #af795d;
+}
+
+.dentrocarta{
+    margin-top: 0%;
+}
+
+.cartainicio{
+    margin-top: 5%;
+    color: #eeefef;
+    background-color: #efe7e2;
+    border:0;
+}
+
 .iniciodesc{
     color: black;
     display: flex;
     justify-content: center;
     padding-top: 10px;
     margin-bottom: 5px;
-    font-size: 40px; 
+    font-family: 'Kanit', sans-serif;
 }
 
-.contacto{
-    text-decoration: none;
-    list-style: none;
-    color: #efe7e2;
-    background-color: #af795D;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    margin-bottom: 5px;
-    height: 70px;
-    width: 350px;
-    border-radius: 6px;
-    transition: all 1s;
-}
-
-.contacto:hover{
-    transform: scale(1.3);
-    background-color: transparent;
-    color: black;
+.margmodalini{
+    margin-top: 5%;
 }
 
 /*servicios*/
@@ -112,6 +116,40 @@ body{
     margin-left: 0%;
 }
 
+.margmodalgale{
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.imgmodales{
+    width: 100%;
+    height: 100%;
+}
+
 /*nosotros*/
 
+.imgnoso{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 /*contacto*/
+
+.cartacontacto{
+        margin-top: 5%;
+        color: #eeefef;
+        background-color: #efe7e2;
+        border:0;
+}
+
+.contacts{
+    color: black;
+}
+
+/*Medias para adaptar el Boby
+@media (min-width: 0px) and (max-width: 767px) {
+    .index{
+        background-color: #efe7e2;
+    }
