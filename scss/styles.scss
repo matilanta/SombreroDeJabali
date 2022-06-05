@@ -13,6 +13,13 @@ padding: 0;
 
 /*a todo*/
 
+.videoinicio{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 @media (min-width: 992px) {
     .index{
         background-image: $img-fondo;
@@ -28,9 +35,26 @@ padding: 0;
     .cartainicio{
         margin-top: 5%;
         color: $color-cuerpos;
-        background-color: $color-cabeceras;
+        background-color: #efe7e29a;
         border:0;
+        font-family: 'Ubuntu', sans-serif;
     }
+    
+ .videoinicio{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.iniciodesc{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.parrafini{
+  display: none;
+}
+
   }
 
   @media (max-width: 991px) {
@@ -43,13 +67,21 @@ padding: 0;
     }
 
     .cartainicio{
-        margin-top: 5%;
-        color: $color-cuerpos;
-        background-color: $color-cuerpos;
-        border:0;
+        display: none;
     }
     
+    .videoinicio{
+      display: none;
+    }
+
+   .parrafini{
+    margin-top: 5%;
+    background-color: $color-cuerpos;
+    border:0;
+   }
+  
   }
+
 
 .btnuno{
     padding: 2rem 3rem;
@@ -452,7 +484,7 @@ body{
 .cartacontacto{
         margin-top: 5%;
         color: $color-cuerpos;
-        background-color: $color-cabeceras;
+        background-color: #efe7e29a;
         border:0;
 }
 

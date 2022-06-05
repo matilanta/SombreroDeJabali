@@ -6,6 +6,12 @@
   padding: 0; }
 
 /*a todo*/
+.videoinicio {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
 @media (min-width: 992px) {
   .index {
     background-image: url(../../multimedia/logo/fondoconiconos.png);
@@ -18,8 +24,18 @@
   .cartainicio {
     margin-top: 5%;
     color: #eeefef;
-    background-color: #efe7e2;
-    border: 0; } }
+    background-color: #efe7e29a;
+    border: 0;
+    font-family: 'Ubuntu', sans-serif; }
+  .videoinicio {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+  .iniciodesc {
+    font-family: 'Ubuntu', sans-serif; }
+  .parrafini {
+    display: none; } }
 
 @media (max-width: 991px) {
   .index {
@@ -28,8 +44,11 @@
     background-color: #efe7e2;
     margin: 0px; }
   .cartainicio {
+    display: none; }
+  .videoinicio {
+    display: none; }
+  .parrafini {
     margin-top: 5%;
-    color: #eeefef;
     background-color: #eeefef;
     border: 0; } }
 
@@ -377,7 +396,7 @@ body {
 .cartacontacto {
   margin-top: 5%;
   color: #eeefef;
-  background-color: #efe7e2;
+  background-color: #efe7e29a;
   border: 0; }
 
 .contacts {
