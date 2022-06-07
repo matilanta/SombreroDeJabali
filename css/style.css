@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0; }
 
+/*dividir los sass en varias carpetas, organizado por favor*/
 /*a todo*/
 .videoinicio {
   position: absolute;
@@ -321,9 +322,10 @@ body {
 .imggal:hover {
   transform: scale(1.04); }
 
-.playlist {
-  margin-left: 2%; }
-
+/*
+.playlist{
+    margin-left: 2%;
+}*/
 .conectores {
   height: 35px;
   width: 40px;
