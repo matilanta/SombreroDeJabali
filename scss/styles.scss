@@ -1,0 +1,493 @@
+$color-cabeceras: #efe7e2;
+$color-cuerpos: #eeefef;
+$img-fondo: url(../../multimedia/logo/fondoconiconos.png);
+$color-botones: #af795d;
+$color-letrasheader: #6c6866;
+$transformacion-header: translate(-50%, -50%); 
+*{text-decoration: none;
+    list-style: none;
+    cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+margin: 0;
+padding: 0;
+}
+/*separar todo en partes*/
+/*a todo*/
+
+.videoinicio{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    .index{
+        background-image: $img-fondo;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .headcol{
+        background-color: $color-cabeceras;
+        margin: 0px;
+    }   
+
+    .cartainicio{
+        margin-top: 5%;
+        color: $color-cuerpos;
+        background-color: #efe7e29a;
+        border:0;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+ .videoinicio{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.iniciodesc{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.parrafini{
+  display: none;
+}
+
+  }
+
+  @media (max-width: 991px) {
+    .index{
+        background-color: $color-cuerpos;
+    }
+    .headcol{
+        background-color: $color-cabeceras;
+        margin: 0px;
+    }
+
+    .cartainicio{
+        display: none;
+    }
+    
+    .videoinicio{
+      display: none;
+    }
+
+   .parrafini{
+    margin-top: 5%;
+    background-color: $color-cuerpos;
+    border:0;
+   }
+  
+  }
+
+
+.btnuno{
+    padding: 2rem 3rem;
+    position: relative;
+    overflow: hidden;
+    background: $color-cabeceras;
+    border: none;
+}
+
+.btnuno::before{
+  content: 'Home';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-letrasheader;
+  transform: $transformacion-header;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+}
+
+.btnuno::after{
+  content: url(../multimedia/logo/casa.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: $transformacion-header scale(0);
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.btnuno:hover::before{
+  transform: $transformacion-header scale(3);
+  opacity: 0;
+}
+
+.btnuno:hover::after{
+  transform: $transformacion-header scale(1);
+  opacity: 1;
+}
+
+/*segundo btn*/
+.btndos{
+    padding: 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    background: $color-cabeceras;
+    border: none;
+}
+
+.btndos::before{
+  content: 'Servicios';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-letrasheader;
+  transform: $transformacion-header;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+}
+
+.btndos::after{
+  content: url(../multimedia/logo/servicios.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: $transformacion-header scale(0);
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.btndos:hover::before{
+  transform: $transformacion-header scale(3);
+  opacity: 0;
+}
+
+.btndos:hover::after{
+  transform: $transformacion-header scale(1);
+  opacity: 1;
+}
+
+/*tercer btn*/
+.btntres{
+    padding: 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    background: $color-cabeceras;
+    border: none;
+}
+
+.btntres::before{
+  content: 'Galeria';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-letrasheader;
+  transform: $transformacion-header;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+}
+
+.btntres::after{
+  content: url(../multimedia/logo/galeria.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: $transformacion-header scale(0);
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.btntres:hover::before{
+  transform: $transformacion-header scale(3);
+  opacity: 0;
+}
+
+.btntres:hover::after{
+  transform: $transformacion-header scale(1);
+  opacity: 1;
+}
+
+
+/*cuarto btn*/
+.btncuatro{
+    padding: 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    background: $color-cabeceras;
+    border: none;
+}
+
+.btncuatro::before{
+  content: 'Nosotros';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-letrasheader;
+  transform: $transformacion-header;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+}
+
+.btncuatro::after{
+  content: url(../multimedia/logo/nosotros.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: $transformacion-header scale(0);
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.btncuatro:hover::before{
+  transform: $transformacion-header scale(3);
+  opacity: 0;
+}
+
+.btncuatro:hover::after{
+  transform: $transformacion-header scale(1);
+  opacity: 1;
+}
+
+/*quinto btn*/
+.btncinco{
+    padding: 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    background: $color-cabeceras;
+    border: none;
+}
+
+.btncinco::before{
+  content: 'Contacto';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-letrasheader;
+  transform: $transformacion-header;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+}
+
+.btncinco::after{
+  content: url(../multimedia/logo/contacto.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: $transformacion-header scale(0);
+  font-size: 1.6rem;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.btncinco:hover::before{
+  transform: $transformacion-header scale(3);
+  opacity: 0;
+}
+
+.btncinco:hover::after{
+  transform: $transformacion-header scale(1);
+  opacity: 1;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+body{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    cursor: url(../multimedia/logo/cursortenedor.png), auto;
+}
+
+.logos{
+    height: 35px;
+    width: 40px;
+ 
+    transition: all 1s;
+}
+
+.logos:hover{
+    transform: scale(1.3);
+}
+
+.seccionservicios{
+    margin-top: 2%;
+}
+
+.contacinic{
+    font-size: 30px;
+    background-color: $color-botones;
+}
+
+.dentrocarta{
+    margin-top: 0%;
+}
+
+
+.iniciodesc{
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.margmodalini{
+    margin-top: 5%;
+}
+
+/*servicios*/
+
+.services{
+    background-color: $color-cuerpos;
+}
+
+.descservice{
+    margin-top: 100px;
+}
+
+/*galeria*/
+
+.cartagaleria{
+    overflow: hidden;
+}
+
+.imggal{ 
+    height: 95%;
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 0%;
+    margin-left: 0%;
+    /*transition: all 1s;*/
+    transition: all 1s;
+}
+
+.imggal:hover{
+    transform: scale(1.04);
+}
+
+.playlist{
+    margin-left: 2%;
+}
+
+.conectores{
+    height: 35px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100%;
+    margin-left: 5%;
+    transition: all 1s;
+}
+
+.contgale{
+    margin-left: 0%;
+}
+
+.margmodalgale{
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.imgmodales{
+    width: 100%;
+    height: 100%;
+}
+
+/*nosotros*/
+
+.imgnoso{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.btnnoso{
+    padding: 10rem 2rem;
+    position: relative;
+    overflow: hidden;
+    background: $color-cuerpos;
+    border: none;
+}
+
+.btnnoso::before{
+  content: url(../multimedia/imagenes/nosotros.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-letrasheader;
+  transform: $transformacion-header;
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+}
+
+.btnnoso::after{
+    content: 'Aqui se puede visualizar a nuestro hermoso grupo de trabajo';
+  position: absolute;
+  transform: $transformacion-header scale(0);
+  font-size: 1rem;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.btnnoso:hover::before{
+  transform: $transformacion-header scale(3);
+  opacity: 0;
+}
+
+.btnnoso:hover::after{
+  transform: $transformacion-header scale(1);
+  opacity: 1;
+}
+
+/*contacto*/
+
+.cartacontacto{
+        margin-top: 5%;
+        color: $color-cuerpos;
+        background-color: #efe7e29a;
+        border:0;
+}
+
+.contacts{
+    color: black;
+}
