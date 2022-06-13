@@ -1,0 +1,167 @@
+@import '_variables';
+
+/*en esta seccion de general estarian las cosas que se aplican a todos los html, como el header*/
+
+
+@mixin contenido($valor) {
+    content: $valor;
+}
+
+%btns{
+    padding: 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+    background: $color-cabeceras;
+    border: none;
+}
+
+%btnshover{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-letrasheader;
+  transform: $transformacion-header;
+  font-size: 1rem;
+  font-family: $letras;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+}
+
+%btnsafter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: $transformacion-header scale(0);
+    font-size: 1rem;
+    font-family: $letras;
+    letter-spacing: .3rem;
+    font-weight: 700;
+    transition: 1s ease;
+    opacity: 0;
+}
+
+%btnhoverbefore{
+    transform: $transformacion-header scale(3);
+    opacity: 0;
+}
+
+%btnhoverafter{
+    transform: $transformacion-header scale(1);
+    opacity: 1;
+}
+
+.btnuno{
+   @extend %btns;
+}
+
+.btnuno::before{
+    @include contenido('Home');
+  @extend %btnshover;
+}
+
+.btnuno::after{
+    @include contenido(url(../multimedia/logo/casa.png));
+  @extend %btnsafter;
+}
+
+.btnuno:hover::before{
+  @extend %btnhoverbefore;
+}
+
+.btnuno:hover::after{
+    @extend %btnhoverafter;
+}
+
+/*segundo btn*/
+.btndos{
+    @extend %btns;
+}
+
+.btndos::before{
+    @include contenido('Servicios');
+  @extend %btnshover;
+}
+
+.btndos::after{
+    @include contenido(url(../multimedia/logo/servicios.png));
+  @extend %btnsafter;
+}
+
+.btndos:hover::before{
+    @extend %btnhoverbefore;
+}
+
+.btndos:hover::after{
+    @extend %btnhoverafter;
+}
+
+/*tercer btn*/
+.btntres{
+    @extend %btns;
+}
+
+.btntres::before{
+    @include contenido('Galeria');
+  @extend %btnshover;
+}
+
+.btntres::after{
+    @include contenido(url(../multimedia/logo/galeria.png));
+  @extend %btnsafter;
+}
+
+.btntres:hover::before{
+    @extend %btnhoverbefore;
+}
+
+.btntres:hover::after{
+    @extend %btnhoverafter;
+}
+
+
+/*cuarto btn*/
+.btncuatro{
+    @extend %btns;
+}
+
+.btncuatro::before{
+    @include contenido('Nosotros');
+  @extend %btnshover;
+}
+
+.btncuatro::after{
+    @include contenido(url(../multimedia/logo/nosotros.png));
+  @extend %btnsafter;
+}
+
+.btncuatro:hover::before{
+    @extend %btnhoverbefore;
+}
+
+.btncuatro:hover::after{
+    @extend %btnhoverafter;
+}
+
+/*quinto btn*/
+.btncinco{
+    @extend %btns;
+}
+
+.btncinco::before{
+    @include contenido('Contacto');
+  @extend %btnshover;
+}
+
+.btncinco::after{
+    @include contenido(url(../multimedia/logo/contacto.png));
+  @extend %btnsafter;
+}
+
+.btncinco:hover::before{
+    @extend %btnhoverbefore;
+}
+
+.btncinco:hover::after{
+    @extend %btnhoverafter;
+}

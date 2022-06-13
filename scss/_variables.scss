@@ -1,0 +1,23 @@
+$colores:
+#efe7e2,
+#eeefef,
+#af795d,
+#6c6866;
+$color-cabeceras: nth($colores, 1);
+$color-cuerpos: nth($colores, 2);
+$color-botones: nth($colores, 3);
+$color-letrasheader: nth($colores, 4);
+/*
+$color-cabeceras: #efe7e2;
+$color-cuerpos: #eeefef;
+$color-botones: #af795d;
+$color-letrasheader: #6c6866;*/
+$img-fondo: url(../../multimedia/logo/fondoconiconos.png);
+$transformacion-header: translate(-50%, -50%); 
+*{text-decoration: none;
+    list-style: none;
+    cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+margin: 0;
+padding: 0;
+}
+$letras: 'Ubuntu', sans-serif;
