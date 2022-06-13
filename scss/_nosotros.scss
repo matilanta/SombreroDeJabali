@@ -1,0 +1,55 @@
+@import '_variables';
+
+
+.imgnoso{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.btnnoso{
+    padding: 10rem 2rem;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    width: 100%;
+    border: none;
+}
+
+.btnnoso::before{
+  content: url(../multimedia/imagenes/nosotros.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: $color-letrasheader;
+  transform: $transformacion-header;
+  font-size: 1rem;
+  font-family: $letras;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+}
+
+.btnnoso::after{
+    content: 'Aqui se puede visualizar a nuestro hermoso grupo de trabajo';
+  position: absolute;
+  transform: $transformacion-header scale(0);
+  font-size: 1rem;
+  font-family: $letras;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+  opacity: 0;
+}
+
+.btnnoso:hover::before{
+  transform: $transformacion-header scale(3);
+  opacity: 0;
+}
+
+.btnnoso:hover::after{
+  transform: $transformacion-header scale(1);
+  opacity: 1;
+}

@@ -1,0 +1,46 @@
+@import '_variables';
+
+@mixin alturaancho($altura, $ancho) {
+    height: $altura;
+    width: $ancho;
+}
+
+.cartagaleria{
+    overflow: hidden;
+}
+
+.imggal{ 
+    @include alturaancho(95%,  100%);
+    margin-top: 2px;
+    margin-right: 0px;
+    margin-left: 0px;
+    /*transition: all 1s;*/
+    transition: all 1s;
+    border-radius: 10px;
+}
+
+.imggal:hover{
+    transform: scale(1.04);
+}
+
+.conectores{
+    @include alturaancho(35px, 40px);
+    display: flex;
+    justify-content: center;
+    margin-top: 100%;
+    margin-left: 5%;
+    transition: all 1s;
+}
+
+.contgale{
+    margin-left: 0%;
+}
+
+.margmodalgale{
+    margin-top: 5%;
+    @include alturaancho(100%,  100%);
+}
+
+.imgmodales{
+    @include alturaancho(100%,  100%);
+}

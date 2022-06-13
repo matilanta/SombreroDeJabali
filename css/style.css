@@ -1,3 +1,8 @@
+/*
+$color-cabeceras: #efe7e2;
+$color-cuerpos: #eeefef;
+$color-botones: #af795d;
+$color-letrasheader: #6c6866;*/
 * {
   text-decoration: none;
   list-style: none;
@@ -5,20 +10,16 @@
   margin: 0;
   padding: 0; }
 
-/*dividir los sass en varias carpetas, organizado por favor*/
-/*a todo*/
 .videoinicio {
   position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+  z-index: -1; }
 
 @media (min-width: 992px) {
   .index {
-    background-image: url(../../multimedia/logo/fondoconiconos.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; }
+    background: #efe7e2; }
   .headcol {
     background-color: #efe7e2;
     margin: 0px; }
@@ -27,14 +28,15 @@
     color: #eeefef;
     background-color: #efe7e29a;
     border: 0;
-    font-family: 'Ubuntu', sans-serif; }
+    border-radius: 10px;
+    font-family: "Ubuntu", sans-serif; }
   .videoinicio {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover; }
   .iniciodesc {
-    font-family: 'Ubuntu', sans-serif; }
+    font-family: "Ubuntu", sans-serif; }
   .parrafini {
     display: none; } }
 
@@ -53,221 +55,13 @@
     background-color: #eeefef;
     border: 0; } }
 
-.btnuno {
-  padding: 2rem 3rem;
-  position: relative;
-  overflow: hidden;
-  background: #efe7e2;
-  border: none; }
-
-.btnuno::before {
-  content: 'Home';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #6c6866;
-  transform: translate(-50%, -50%);
-  font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: .3rem;
-  font-weight: 700;
-  transition: 1s ease; }
-
-.btnuno::after {
-  content: url(../multimedia/logo/casa.png);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: .3rem;
-  font-weight: 700;
-  transition: 1s ease;
-  opacity: 0; }
-
-.btnuno:hover::before {
-  transform: translate(-50%, -50%) scale(3);
-  opacity: 0; }
-
-.btnuno:hover::after {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1; }
-
-/*segundo btn*/
-.btndos {
-  padding: 2rem 4rem;
-  position: relative;
-  overflow: hidden;
-  background: #efe7e2;
-  border: none; }
-
-.btndos::before {
-  content: 'Servicios';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #6c6866;
-  transform: translate(-50%, -50%);
-  font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: .3rem;
-  font-weight: 700;
-  transition: 1s ease; }
-
-.btndos::after {
-  content: url(../multimedia/logo/servicios.png);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: .3rem;
-  font-weight: 700;
-  transition: 1s ease;
-  opacity: 0; }
-
-.btndos:hover::before {
-  transform: translate(-50%, -50%) scale(3);
-  opacity: 0; }
-
-.btndos:hover::after {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1; }
-
-/*tercer btn*/
-.btntres {
-  padding: 2rem 4rem;
-  position: relative;
-  overflow: hidden;
-  background: #efe7e2;
-  border: none; }
-
-.btntres::before {
-  content: 'Galeria';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #6c6866;
-  transform: translate(-50%, -50%);
-  font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: .3rem;
-  font-weight: 700;
-  transition: 1s ease; }
-
-.btntres::after {
-  content: url(../multimedia/logo/galeria.png);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: .3rem;
-  font-weight: 700;
-  transition: 1s ease;
-  opacity: 0; }
-
-.btntres:hover::before {
-  transform: translate(-50%, -50%) scale(3);
-  opacity: 0; }
-
-.btntres:hover::after {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1; }
-
-/*cuarto btn*/
-.btncuatro {
-  padding: 2rem 4rem;
-  position: relative;
-  overflow: hidden;
-  background: #efe7e2;
-  border: none; }
-
-.btncuatro::before {
-  content: 'Nosotros';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #6c6866;
-  transform: translate(-50%, -50%);
-  font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: .3rem;
-  font-weight: 700;
-  transition: 1s ease; }
-
-.btncuatro::after {
-  content: url(../multimedia/logo/nosotros.png);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: .3rem;
-  font-weight: 700;
-  transition: 1s ease;
-  opacity: 0; }
-
-.btncuatro:hover::before {
-  transform: translate(-50%, -50%) scale(3);
-  opacity: 0; }
-
-.btncuatro:hover::after {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1; }
-
-/*quinto btn*/
-.btncinco {
-  padding: 2rem 4rem;
-  position: relative;
-  overflow: hidden;
-  background: #efe7e2;
-  border: none; }
-
-.btncinco::before {
-  content: 'Contacto';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #6c6866;
-  transform: translate(-50%, -50%);
-  font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
-  letter-spacing: .3rem;
-  font-weight: 700;
-  transition: 1s ease; }
-
-.btncinco::after {
-  content: url(../multimedia/logo/contacto.png);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  font-size: 1.6rem;
-  letter-spacing: .3rem;
-  font-weight: 700;
-  transition: 1s ease;
-  opacity: 0; }
-
-.btncinco:hover::before {
-  transform: translate(-50%, -50%) scale(3);
-  opacity: 0; }
-
-.btncinco:hover::after {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 1; }
-
 h1 {
   font-size: 3rem; }
 
 body {
   flex-wrap: wrap;
-  width: 100%;
   height: 100%;
+  width: 100%;
   cursor: url(../multimedia/logo/cursortenedor.png), auto; }
 
 .logos {
@@ -279,7 +73,7 @@ body {
   transform: scale(1.3); }
 
 .seccionservicios {
-  margin-top: 2%; }
+  margin-top: 0%; }
 
 .contacinic {
   font-size: 30px;
@@ -299,25 +93,56 @@ body {
 .margmodalini {
   margin-top: 5%; }
 
-/*servicios*/
+.servicesini {
+  background: transparent;
+  color: black !important; }
+
+/*
+$color-cabeceras: #efe7e2;
+$color-cuerpos: #eeefef;
+$color-botones: #af795d;
+$color-letrasheader: #6c6866;*/
+* {
+  text-decoration: none;
+  list-style: none;
+  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  margin: 0;
+  padding: 0; }
+
 .services {
-  background-color: #eeefef; }
+  background: #eeefef;
+  color: black !important; }
 
 .descservice {
-  margin-top: 100px; }
+  width: 100%;
+  margin-top: 100px;
+  font-size: 20px;
+  color: black; }
 
-/*galeria*/
+/*
+$color-cabeceras: #efe7e2;
+$color-cuerpos: #eeefef;
+$color-botones: #af795d;
+$color-letrasheader: #6c6866;*/
+* {
+  text-decoration: none;
+  list-style: none;
+  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  margin: 0;
+  padding: 0; }
+
 .cartagaleria {
   overflow: hidden; }
 
 .imggal {
   height: 95%;
   width: 100%;
-  margin-top: 5px;
-  margin-right: 0%;
-  margin-left: 0%;
+  margin-top: 2px;
+  margin-right: 0px;
+  margin-left: 0px;
   /*transition: all 1s;*/
-  transition: all 1s; }
+  transition: all 1s;
+  border-radius: 10px; }
 
 .imggal:hover {
   transform: scale(1.04); }
@@ -336,14 +161,25 @@ body {
 
 .margmodalgale {
   margin-top: 5%;
-  width: 100%;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 .imgmodales {
-  width: 100%;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
-/*nosotros*/
+/*
+$color-cabeceras: #efe7e2;
+$color-cuerpos: #eeefef;
+$color-botones: #af795d;
+$color-letrasheader: #6c6866;*/
+* {
+  text-decoration: none;
+  list-style: none;
+  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  margin: 0;
+  padding: 0; }
+
 .imgnoso {
   background-size: cover;
   background-repeat: no-repeat;
@@ -353,7 +189,8 @@ body {
   padding: 10rem 2rem;
   position: relative;
   overflow: hidden;
-  background: #eeefef;
+  background: transparent;
+  width: 100%;
   border: none; }
 
 .btnnoso::before {
@@ -366,7 +203,7 @@ body {
   color: #6c6866;
   transform: translate(-50%, -50%);
   font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   letter-spacing: .3rem;
   font-weight: 700;
   transition: 1s ease; }
@@ -376,7 +213,7 @@ body {
   position: absolute;
   transform: translate(-50%, -50%) scale(0);
   font-size: 1rem;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   letter-spacing: .3rem;
   font-weight: 700;
   transition: 1s ease;
@@ -390,7 +227,18 @@ body {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1; }
 
-/*contacto*/
+/*
+$color-cabeceras: #efe7e2;
+$color-cuerpos: #eeefef;
+$color-botones: #af795d;
+$color-letrasheader: #6c6866;*/
+* {
+  text-decoration: none;
+  list-style: none;
+  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  margin: 0;
+  padding: 0; }
+
 .cartacontacto {
   margin-top: 5%;
   color: #eeefef;
@@ -399,3 +247,104 @@ body {
 
 .contacts {
   color: black; }
+
+/*
+$color-cabeceras: #efe7e2;
+$color-cuerpos: #eeefef;
+$color-botones: #af795d;
+$color-letrasheader: #6c6866;*/
+* {
+  text-decoration: none;
+  list-style: none;
+  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  margin: 0;
+  padding: 0; }
+
+/*en esta seccion de general estarian las cosas que se aplican a todos los html, como el header*/
+.btnuno, .btndos, .btntres, .btncuatro, .btncinco {
+  padding: 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+  background: #efe7e2;
+  border: none; }
+
+.btnuno::before, .btndos::before, .btntres::before, .btncuatro::before, .btncinco::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #6c6866;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease; }
+
+.btnuno::after, .btndos::after, .btntres::after, .btncuatro::after, .btncinco::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: .3rem;
+  font-weight: 700;
+  transition: 1s ease;
+  opacity: 0; }
+
+.btnuno:hover::before, .btndos:hover::before, .btntres:hover::before, .btncuatro:hover::before, .btncinco:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+  opacity: 0; }
+
+.btnuno:hover::after, .btndos:hover::after, .btntres:hover::after, .btncuatro:hover::after, .btncinco:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1; }
+
+.btnuno::before {
+  content: "Home"; }
+
+.btnuno::after {
+  content: url(../multimedia/logo/casa.png); }
+
+/*segundo btn*/
+.btndos::before {
+  content: "Servicios"; }
+
+.btndos::after {
+  content: url(../multimedia/logo/servicios.png); }
+
+/*tercer btn*/
+.btntres::before {
+  content: "Galeria"; }
+
+.btntres::after {
+  content: url(../multimedia/logo/galeria.png); }
+
+/*cuarto btn*/
+.btncuatro::before {
+  content: "Nosotros"; }
+
+.btncuatro::after {
+  content: url(../multimedia/logo/nosotros.png); }
+
+/*quinto btn*/
+.btncinco::before {
+  content: "Contacto"; }
+
+.btncinco::after {
+  content: url(../multimedia/logo/contacto.png); }
+
+/*
+$color-cabeceras: #efe7e2;
+$color-cuerpos: #eeefef;
+$color-botones: #af795d;
+$color-letrasheader: #6c6866;*/
+* {
+  text-decoration: none;
+  list-style: none;
+  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  margin: 0;
+  padding: 0; }
+
+/*acomodar todo en distintos partial*/
+/*a todo*/
