@@ -1,12 +1,14 @@
+/*en esta seccion de general estarian las cosas que se aplican a todos los html, como el header*/
 @import '_variables';
 
-/*en esta seccion de general estarian las cosas que se aplican a todos los html, como el header*/
 
 
+/*mixin para aplicar valores al contenido del header*/
 @mixin contenido($valor) {
     content: $valor;
 }
 
+/*extend para aplicar estilos iguales al header*/
 %btns{
     padding: 2rem 4rem;
     position: relative;

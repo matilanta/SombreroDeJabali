@@ -1,5 +1,7 @@
+/*estilos aplicados solo para la pestaña de galeria*/
 @import '_variables';
 
+/*mixin para el ancho y el alto de las fotos*/
 @mixin alturaancho($altura, $ancho) {
     height: $altura;
     width: $ancho;
