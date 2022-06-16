@@ -1,6 +1,7 @@
+/*estilos aplicados solo para la pestaña de index*/
 @import '_variables';
 
-
+/*estilos aplicados para que se ven distintas algunas secciones en mobile y desktop*/
 @mixin alturaancho($altura, $ancho) {
     height: $altura;
     width: $ancho;
@@ -15,8 +16,19 @@
   
   @media (min-width: 992px) {
       .index{
-          background: $color-cabeceras;
+          background-image: url(../multimedia/imagenes/pexels-artem-beliaikin-926569.jpg);
+          background-size:cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
       }
+
+      .contactbody{
+        background-image: url(../multimedia/imagenes/pexels-nataliya-vaitkevich-6033663.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+    }
+
       .headcol{
           background-color: $color-cabeceras;
           margin: 0px;
