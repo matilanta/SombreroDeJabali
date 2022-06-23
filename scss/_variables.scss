@@ -13,11 +13,11 @@ $color-cabeceras: #efe7e2;
 $color-cuerpos: #eeefef;
 $color-botones: #af795d;
 $color-letrasheader: #6c6866;*/
-$img-fondo: url(../../multimedia/logo/fondoconiconos.png);
+$img-fondo: url(../../multimedia/logo/fondoconiconos.svg);
 $transformacion-header: translate(-50%, -50%); 
 *{text-decoration: none;
     list-style: none;
-    cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+    cursor: url(../../multimedia/logo/cursortenedor.svg), auto;
 margin: 0;
 padding: 0;
 }

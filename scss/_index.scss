@@ -16,14 +16,14 @@
   
   @media (min-width: 992px) {
       .index{
-          background-image: url(../multimedia/imagenes/pexels-artem-beliaikin-926569.jpg);
+          background-image: url(../multimedia/imagenes/pexels-artem-beliaikin-926569.svg);
           background-size:cover;
           background-repeat: no-repeat;
           background-attachment: fixed;  
       }
 
       .contactbody{
-        background-image: url(../multimedia/imagenes/pexels-nataliya-vaitkevich-6033663.jpg);
+        background-image: url(../multimedia/imagenes/pexels-nataliya-vaitkevich-6033663.svg);
         background-size:cover;
         background-repeat: no-repeat;
         background-attachment: fixed;  
@@ -91,7 +91,7 @@
   body{
       flex-wrap: wrap;
       @include alturaancho(100%,  100%);
-      cursor: url(../multimedia/logo/cursortenedor.png), auto;
+      cursor: url(../multimedia/logo/cursortenedor.svg), auto;
   }
   
   .logos{

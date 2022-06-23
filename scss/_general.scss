@@ -1,6 +1,9 @@
 /*en esta seccion de general estarian las cosas que se aplican a todos los html, como el header*/
 @import '_variables';
 
+.disclaimer {
+  display: none; 
+  }
 
 
 /*mixin para aplicar valores al contenido del header*/
@@ -63,7 +66,7 @@
 }
 
 .btnuno::after{
-    @include contenido(url(../multimedia/logo/casa.png));
+    @include contenido(url(../multimedia/logo/casa.svg));
   @extend %btnsafter;
 }
 
@@ -86,7 +89,7 @@
 }
 
 .btndos::after{
-    @include contenido(url(../multimedia/logo/servicios.png));
+    @include contenido(url(../multimedia/logo/servicios.svg));
   @extend %btnsafter;
 }
 
@@ -109,7 +112,7 @@
 }
 
 .btntres::after{
-    @include contenido(url(../multimedia/logo/galeria.png));
+    @include contenido(url(../multimedia/logo/galeria.svg));
   @extend %btnsafter;
 }
 
@@ -133,7 +136,7 @@
 }
 
 .btncuatro::after{
-    @include contenido(url(../multimedia/logo/nosotros.png));
+    @include contenido(url(../multimedia/logo/nosotros.svg));
   @extend %btnsafter;
 }
 
@@ -156,7 +159,7 @@
 }
 
 .btncinco::after{
-    @include contenido(url(../multimedia/logo/contacto.png));
+    @include contenido(url(../multimedia/logo/contacto.svg));
   @extend %btnsafter;
 }
 
