@@ -10,7 +10,7 @@ $color-letrasheader: #6c6866;*/
 * {
   text-decoration: none;
   list-style: none;
-  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  cursor: url(../../multimedia/logo/cursortenedor.svg), auto;
   margin: 0;
   padding: 0; }
 
@@ -24,12 +24,12 @@ $color-letrasheader: #6c6866;*/
 
 @media (min-width: 992px) {
   .index {
-    background-image: url(../multimedia/imagenes/pexels-artem-beliaikin-926569.jpg);
+    background-image: url(../multimedia/imagenes/pexels-artem-beliaikin-926569.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; }
   .contactbody {
-    background-image: url(../multimedia/imagenes/pexels-nataliya-vaitkevich-6033663.jpg);
+    background-image: url(../multimedia/imagenes/pexels-nataliya-vaitkevich-6033663.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed; }
@@ -75,7 +75,7 @@ body {
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
-  cursor: url(../multimedia/logo/cursortenedor.png), auto; }
+  cursor: url(../multimedia/logo/cursortenedor.svg), auto; }
 
 .logos {
   height: 35px;
@@ -120,7 +120,7 @@ $color-letrasheader: #6c6866;*/
 * {
   text-decoration: none;
   list-style: none;
-  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  cursor: url(../../multimedia/logo/cursortenedor.svg), auto;
   margin: 0;
   padding: 0; }
 
@@ -144,7 +144,7 @@ $color-letrasheader: #6c6866;*/
 * {
   text-decoration: none;
   list-style: none;
-  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  cursor: url(../../multimedia/logo/cursortenedor.svg), auto;
   margin: 0;
   padding: 0; }
 
@@ -160,7 +160,7 @@ $color-letrasheader: #6c6866;*/
   margin-left: 0px;
   /*transition: all 1s;*/
   transition: all 1s;
-  border-radius: 10px; }
+  border-radius: 40px; }
 
 .imggal:hover {
   transform: scale(1.04); }
@@ -196,7 +196,7 @@ $color-letrasheader: #6c6866;*/
 * {
   text-decoration: none;
   list-style: none;
-  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  cursor: url(../../multimedia/logo/cursortenedor.svg), auto;
   margin: 0;
   padding: 0; }
 
@@ -258,7 +258,7 @@ $color-letrasheader: #6c6866;*/
 * {
   text-decoration: none;
   list-style: none;
-  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  cursor: url(../../multimedia/logo/cursortenedor.svg), auto;
   margin: 0;
   padding: 0; }
 
@@ -281,9 +281,12 @@ $color-letrasheader: #6c6866;*/
 * {
   text-decoration: none;
   list-style: none;
-  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  cursor: url(../../multimedia/logo/cursortenedor.svg), auto;
   margin: 0;
   padding: 0; }
+
+.disclaimer {
+  display: none; }
 
 /*mixin para aplicar valores al contenido del header*/
 /*extend para aplicar estilos iguales al header*/
@@ -330,35 +333,35 @@ $color-letrasheader: #6c6866;*/
   content: "Home"; }
 
 .btnuno::after {
-  content: url(../multimedia/logo/casa.png); }
+  content: url(../multimedia/logo/casa.svg); }
 
 /*segundo btn*/
 .btndos::before {
   content: "Servicios"; }
 
 .btndos::after {
-  content: url(../multimedia/logo/servicios.png); }
+  content: url(../multimedia/logo/servicios.svg); }
 
 /*tercer btn*/
 .btntres::before {
   content: "Galeria"; }
 
 .btntres::after {
-  content: url(../multimedia/logo/galeria.png); }
+  content: url(../multimedia/logo/galeria.svg); }
 
 /*cuarto btn*/
 .btncuatro::before {
   content: "Nosotros"; }
 
 .btncuatro::after {
-  content: url(../multimedia/logo/nosotros.png); }
+  content: url(../multimedia/logo/nosotros.svg); }
 
 /*quinto btn*/
 .btncinco::before {
   content: "Contacto"; }
 
 .btncinco::after {
-  content: url(../multimedia/logo/contacto.png); }
+  content: url(../multimedia/logo/contacto.svg); }
 
 /*todas las varialbes guardadas para utilizar en los demas partial*/
 /*
@@ -369,7 +372,7 @@ $color-letrasheader: #6c6866;*/
 * {
   text-decoration: none;
   list-style: none;
-  cursor: url(../../multimedia/logo/cursortenedor.png), auto;
+  cursor: url(../../multimedia/logo/cursortenedor.svg), auto;
   margin: 0;
   padding: 0; }
 
